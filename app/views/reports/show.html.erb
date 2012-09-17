@@ -1,0 +1,10 @@
+<h1><%= @report.name %></h1>
+
+<p>
+  <b>Story:</b>
+  <%= @report.story.blank? ? "No story reported at this time." : @report.story %>
+</p>
+
+
+<%= link_to 'Edit', edit_report_path(@report) %> |
+<%= link_to 'Back', reports_path %>

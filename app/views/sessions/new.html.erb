@@ -1,0 +1,13 @@
+<h1>Log in</h1>
+
+<p>
+  Please enter the master password to log in.
+</p>
+
+<p>
+  <%= form_for :session, :url => login_path, :method => :post do |f| %>
+    <b><%= f.label :password, "Password:" %></b>
+    <%= f.password_field :password %>
+    <%= f.submit "Log in" %>
+  <% end %>
+</p>
